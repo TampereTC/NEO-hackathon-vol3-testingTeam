@@ -7,5 +7,6 @@ metadata:
   namespace: kafka
 spec:
   containers:
-  - name: kafka
+  - name: python-producer
     image: <Tähän sit se docker build image>
+    imagePullPolicy: Always
