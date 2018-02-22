@@ -1,0 +1,11 @@
+# Kafka image without the service, so you can run ./bin/ stuff
+# kubectl exec -ti testclient -- /bin/bash
+apiVersion: v1
+kind: Pod
+metadata:
+  name: python-consumer
+  namespace: kafka
+spec:
+  containers:
+  - name: kafka
+    image: <Tähän sit se docker build image>
